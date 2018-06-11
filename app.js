@@ -2,11 +2,16 @@ const colors = require('colors')
 
 const { argv } = require('./yargs')
 
-const comando = argv._[0]
+const { crear } = require('./por-hacer')
+
+let comando = argv._[0]
+
+const descripcion = argv.descripcion || argv.d
 
 switch ( comando ) {
     case 'crear': 
-        console.log('Crear una tarea por hacer');
+        const tarea = crear(descripcion)
+        console.log(tarea)
     break
     case 'listar': 
         console.log('Lista las tareas por hacer');
