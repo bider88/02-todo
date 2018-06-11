@@ -1,0 +1,15 @@
+{
+  "name": "02-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Irving Didier <irvingdidier.sarmiento@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.0",
+    "yargs": "^11.0.0"
+  }
+}
